@@ -13,7 +13,7 @@ sequence.o: sequence.h sequence.c
 test.o: tests/test.c sequence.h
 	$(CC) $(CFLAGS) -c tests/test.c
 
-gh-test-sequence: test
+gh-test-sequence: clean test
 	./test
 
 clean:
